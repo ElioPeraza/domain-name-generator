@@ -1,11 +1,21 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ['the', 'our'];
+let adj = ['great', 'big'];
+let noun = ['jogger', 'racoon'];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+let extenciones = [".com ", ".net ", ".us", ".io"];
+let generator = [];
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+
+for (let i = 0; i < pronoun.length; i++) {
+  for (let j = 0; j < adj.length; j++) {
+    for (let k = 0; k < noun.length; k++) {
+      for (let p = 0; p < extenciones.length; p++) {
+
+        let combination = pronoun[i] + adj[j] + noun[k] + extenciones[p];
+        generator.push(combination)
+      }
+
+    }
+  }
+}
+console.log(generator)
