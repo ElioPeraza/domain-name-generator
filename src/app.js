@@ -19,3 +19,8 @@ for (let i = 0; i < pronoun.length; i++) {
   }
 }
 console.log(generator)
+
+for (i = 0; i < generator.length; i++) {
+  // document.write(generator[i]);
+  document.write('<p>' + generator[i] + '</p>');
+} 
